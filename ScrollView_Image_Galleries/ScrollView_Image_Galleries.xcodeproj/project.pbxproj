@@ -13,6 +13,7 @@
 		522BCC641DDA6C910001B1BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522BCC621DDA6C910001B1BC /* Main.storyboard */; };
 		522BCC661DDA6C910001B1BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 522BCC651DDA6C910001B1BC /* Assets.xcassets */; };
 		522BCC691DDA6C910001B1BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 522BCC671DDA6C910001B1BC /* LaunchScreen.storyboard */; };
+		522BCC771DDA91410001B1BC /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 522BCC761DDA91410001B1BC /* DetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		522BCC651DDA6C910001B1BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		522BCC681DDA6C910001B1BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		522BCC6A1DDA6C910001B1BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		522BCC751DDA91410001B1BC /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		522BCC761DDA91410001B1BC /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +103,8 @@
 			children = (
 				522BCC5F1DDA6C910001B1BC /* ViewController.h */,
 				522BCC601DDA6C910001B1BC /* ViewController.m */,
+				522BCC751DDA91410001B1BC /* DetailsViewController.h */,
+				522BCC761DDA91410001B1BC /* DetailsViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -185,6 +190,7 @@
 				522BCC611DDA6C910001B1BC /* ViewController.m in Sources */,
 				522BCC5E1DDA6C910001B1BC /* AppDelegate.m in Sources */,
 				522BCC5B1DDA6C910001B1BC /* main.m in Sources */,
+				522BCC771DDA91410001B1BC /* DetailsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +345,7 @@
 				522BCC6F1DDA6C910001B1BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
