@@ -23,16 +23,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self setupPanningAndZoomingImage];
     self.imageScrollView.delegate = self;
-    
-    
     self.lighthouseImageView = [[UIImageView alloc] initWithImage:self.detailedImage];
     self.lighthouseImageView.frame = self.view.frame;
     self.lighthouseImageView.contentMode = UIViewContentModeScaleAspectFit;
-    
     [self.imageScrollView addSubview:self.lighthouseImageView];
-    
     self.imageScrollView.contentSize = self.lighthouseImageView.bounds.size;
+    
 }
 
 - (void)setupPanningAndZoomingImage
@@ -49,4 +47,3 @@
 
 
 @end
-

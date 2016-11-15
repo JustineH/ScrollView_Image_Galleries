@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="4Ua-Sv-LXp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="y0D-EJ-tOI">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,6 +40,7 @@
                     <navigationItem key="navigationItem" id="QEM-FA-dCT"/>
                     <connections>
                         <outlet property="imageScrollView" destination="xIQ-s6-VJ7" id="hf4-TY-dbZ"/>
+                        <segue destination="4Ua-Sv-LXp" kind="show" identifier="detailsViewController" id="hPH-Hg-LVO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,8 +70,10 @@
                         <constraints>
                             <constraint firstItem="9NK-1V-01p" firstAttribute="leading" secondItem="mPl-26-CLh" secondAttribute="leading" id="Ea1-Ez-zwF"/>
                             <constraint firstAttribute="trailing" secondItem="9NK-1V-01p" secondAttribute="trailing" id="Emi-LJ-9wd"/>
+                            <constraint firstItem="9NK-1V-01p" firstAttribute="centerX" secondItem="mPl-26-CLh" secondAttribute="centerX" id="Ojl-C3-glu"/>
                             <constraint firstItem="9NK-1V-01p" firstAttribute="top" secondItem="mPl-26-CLh" secondAttribute="top" id="Uha-vK-Sr4"/>
                             <constraint firstItem="hrF-aa-cI7" firstAttribute="top" secondItem="9NK-1V-01p" secondAttribute="bottom" id="nwU-1s-I1q"/>
+                            <constraint firstItem="9NK-1V-01p" firstAttribute="centerY" secondItem="mPl-26-CLh" secondAttribute="centerY" id="p0g-92-aEc"/>
                         </constraints>
                     </view>
                     <connections>

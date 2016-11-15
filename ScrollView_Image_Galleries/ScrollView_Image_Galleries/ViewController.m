@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIScrollView *imageScrollView;
 @property (strong, nonatomic) UIImageView *lighthouseImageView;
 @property (strong, nonatomic, readonly) NSArray<UIImage *> *lighthouseImages;
+@property (nonatomic) UITapGestureRecognizer *imageViewTapped;
 
 
 @end
@@ -24,7 +25,7 @@
 {
     [super viewDidLoad];
     [self scrollViewImages];
-
+    [self imageViewTapped];
 }
 
 
@@ -49,6 +50,11 @@
         lighthouseImageView.frame = CGRectMake(imageXPosition, 0, scrollViewWidth, scrollViewHeight);
         lighthouseImageView.contentMode = UIViewContentModeScaleAspectFit;
         
+        UITapGestureRecognizer *imageViewTapped = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(imageViewTapped:)];
+        
+        [lighthouseImageView addGestureRecognizer:imageViewTapped];
+        lighthouseImageView.userInteractionEnabled = YES;
+        
         [self.imageScrollView addSubview:lighthouseImageView];
         
         imageXPosition += scrollViewWidth;
@@ -70,6 +76,27 @@
         [UIImage imageNamed:@"Lighthouse-in-Field"],
      
      ];
+}
+
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([segue.identifier isEqual: @"detailsViewController"])
+    {
+        DetailsViewController *vc = segue.destinationViewController;
+        vc.detailedImage = sender;
+     //   vc.detailedImage = (UIImage *)sender;
+     //   [vc setDetailedImage:detailedImage];
+       
+    }
+}
+
+- (void)imageViewTapped:(UITapGestureRecognizer *)sender
+{
+    UIImageView *imageTapped = (UIImageView *)sender.view;
+    
+    [self performSegueWithIdentifier:@"detailsViewController" sender:imageTapped.image];
+    
 }
 
 
